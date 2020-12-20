@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title> Picaboo.com</title>
+</head>
+
+<body>
+  <div id="page-container">
+    <header class="page-header">
+      <div class="header-container">
+        <div class="nav1">
+          <div class="nav-toggle"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </div>
+
+          <div class="mob-logo">
+            <img src="./img/pickaboo-small-device.png">
+          </div>
+
+
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+            <div class="tab">
+              <button class="tab0" onclick="openMenu(event, 'menu')" id="defaultOpen">Menu</button>
+              <button class="tab0" onclick="openMenu(event, 'account')">Account</button>
+            </div>
+
+
+            <div id="menu" class="tabcontent">
+              <button class="accordion">SMARTPHONES <i class="fa fa-angle-down"></i></button>
+
+              <div class="panel">
+                <a class="will-change" href="#Samsung">Samsung</a><br>
+                <a class="will-change" href="#OPPO">OPPO</a><br>
+                <a class="will-change" href="#Vivo">Vivo</a><br>
+                <a class="will-change" href="#realme">realme</a><br>
+                <a class="will-change" href="#Xiaomi">Xiaomi</a><br>
+                <a class="will-change" href="#OnePlus">OnePlus</a><br>
+                <a class="will-change" href="#Huawei">Huawei</a><br>
+                <a class="will-change" href="#iPhone">iPhone</a><br>
+                <a class="will-change" href="#Nokia">Nokia</a><br>
+              </div>
+
+
+
+
+
+              <button class="accordion">FEATURE PHONES <i class="fa fa-angle-down"></i></button>
+              <div class="panel">
+                <a class="will-change" href="#Samsung">Samsung</a><br>
+                <a class="will-change" href="#Nokia">Nokia</a><br>
+              </div>
+
+
+              <button class="accordion">ELECTRONICS & APPLIANCES <i class="fa fa-angle-down"></i></button>
+              <div class="panel">
+                <h3> Home Appliances</h3>
+                <a class="will-change" href="#">Televisions</a><br>
+                <a class="will-change" href="#">AC</a><br>
+                <a class="will-change" href="#">Refrigerator & Fridge </a><br>
+                <a class="will-change" href="#">Geyser/Room Heater</a><br>
+                <a class="will-change" href="#">Iron</a><br>
+                <a class="will-change" href="#">Washing Machine</a><br>
+                <a class="will-change" href="#">BOSCH Home Appliances</a><br>
+                <a aclass="will-change" href="#">Home Theater & Sound System</a><br>
+
+
+                <h3>Kitchen Appliances</h3>
+                <a class="will-change" href="#">Grinder & Blender</a><br>
+                <a class="will-change" href="#">Water Filters & Purifiers</a><br>
+                <a class="will-change" href="#">Microwave Oven</a><br>
+                <a class="will-change" href="#">Kettle</a><br>
+                <a class="will-change" href="#">Rice Cooker</a><br>
+                <a class="will-change" href="#">Cooking Stove</a><br>
+                <a class="will-change" href="#">Kitchen Hood</a><br>
+
+
+                <h3>Others</h3>
+                <a class="will-change" href="#">Tools & Hardware</a><br>
+
+              </div>
+
+
+              <button class="accordion">ACCESSORIES <i class="fa fa-angle-down"></i></button>
+              <div class="panel">
+                <h3>Mobile Accessories</h3>
+                <a class="will-change" href="#">Apple Accessories</a><br>
+                <a class="will-change" href="#">Charger & Adapter</a><br>
+                <a class="will-change" href="#">Data Cables</a><br>
+                <a class="will-change" href="#">Power Bank</a><br>
+                <a class="will-change" href="#">Headphone</a><br>
+                <a class="will-change" href="#">Speaker</a><br>
+                <a class="will-change" href="#">Action Cameras</a><br>
+                <a class="will-change" href="#">Smart Watch</a><br>
+                <a class="will-change" href="#">True Wireless Earbud</a><br>
+                <a class="will-change" href="#">Selfie Sticks</a><br>
+                <a class="will-change" href="#">JBL & HK Accessories</a><br>
+                <a class="will-change" href="#">Other Accessories</a><br>
+
+
+                <h3>Computer Accessories</h3>
+                <a class="will-change" href="#">Laptop & Notebook</a><br>
+                <a class="will-change" href="#">Processor</a><br>
+                <a class="will-change" href="#">Printer</a><br>
+                <a class="will-change" href="#">Mouse</a><br>
+                <a class="will-change" href="#">Mouse Pad</a><br>
+                <a class="will-change" href="#">Monitor</a><br>
+                <a class="will-change" href="#">Keyboard</a><br>
+                <a class="will-change" href="#">Pen Drive</a><br>
+                <a class="will-change" href="#">Gamepad</a><br>
+                <a class="will-change" href="#">USB Port & Hub</a><br>
+                <a class="will-change" href="#">Router</a><br>
+                <a class="will-change" href="#">Headset</a><br>
+                <a class="will-change" href="#">HDD & SSD</a><br>
+                <a class="will-change" href="#">RAM</a><br>
+                <a class="will-change" href="#">Sound System</a><br>
+                <a class="will-change" href="#">Software & Antivirus</a><br>
+                <a class="will-change" href="#">Power Supply</a><br>
+                <a class="will-change" href="#">UPS</a><br>
+                <a class="will-change" href="#">Webcam</a><br>
+                <a class="will-change" href="#">Other Accessories</a><br>
+
+
+                <h3>Gaming Consoles & Accessories</h3>
+                <a class="will-change" href="#">Console</a><br>
+                <a class="will-change" href="#">Controller</a><br>
+                <a class="will-change" href="#">Games</a><br>
+                <a class="will-change" href="#">Accessories</a><br>
+
+              </div>
+
+              <button class="accordion">LIFESTYLE <i class="fa fa-angle-down"></i></button>
+              <div class="panel">
+                <h3>Grooming Products</h3>
+                <a class="will-change" href="#Nokia" href="#">Trimmer & Shaver</a><br>
+                <a class="will-change" href="#Nokia" href="#">Hair Straighteners</a><br>
+                <a class="will-change" href="#Nokia" href="#"> Hair Dryers</a><br>
+                <p>Men's Watches</p>
+                <p>Women's Watches</p>
+                <p>Men's Fragrances</p>
+                <p>Women's Fragrances</p>
+                <p>Digital Products</p>
+                <p>Helmet</p>
+                <p>Backpack</p>
+              </div>
+            </div>
+
+            <div id="account" class="tabcontent">
+              <a class="acc"><i class="fa fa-unlock-alt"></i>Log In</a>
+              <a class="acc"><i class="fa fa-key"></i>Register</a>
+              <a class="acc"><i class="fa fa-heart"></i>Wishlist()</a>
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="logo">
+            <a href="#default" class="logo-image"><img src="./img/pickaboo-logo.png" width="143px" height="65px"></a>
+          </div>
+
+
+          <div class="mpb-logo">
+            <a href="#default" class="mob-logo-image"><img src="./img/pickaboo-small.jpg" width="100px" height="50px"></a>
+          </div>
+
+
+
+          <div class="search-container">
+            <form action="#">
+              <input type="text" placeholder="Search entire store here..." name="search"> <button type="submit">
+                <i class="fa fa-search"></i></button>
+            </form>
+          </div>
+
+          <div class="mob-search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+
+          <div class="cart-container">
+
+            <button type="submit"><i class="fa fa-shopping-cart"></i></button>
+            <a href="#" class="cart">
+              <span style="font-size: 13px; margin-top: 30px;">My Cart</span>
+              <div class="badge">0</div>
+            </a>
+          </div>
+
+          <div class="mob-cart">
+            <button type="submit"><i class="fa fa-shopping-cart"></i></button>
+            <a href="#" id="cart">
+              <div class="badge">0</div>
+            </a>
+          </div>
+
+
+          <div class="nav1-right">
+            <a href="#home"><i class="fa fa-unlock-alt"></i> Log In</a>
+            <a href="#Register"><i class="fa fa-key"></i> Register</a>
+          </div>
+
+        </div>
+
+        <div class="navbar">
+
+          <div class="subnav">
+            <button class="subnavbtn">SMARTPHONES</button>
+            <div class="subnav-content">
+              <a class="will-change" href="#Samsung">Samsung</a>
+              <a class="will-change" href="#OPPO">OPPO</a>
+              <a class="will-change" href="#Vivo">Vivo</a>
+              <a class="will-change" href="#realme">realme</a>
+              <a class="will-change" href="#Xiaomi">Xiaomi</a>
+              <a class="will-change" href="#OnePlus">OnePlus</a>
+              <a class="will-change" href="#Huawei">Huawei</a>
+              <a class="will-change" href="#iPhone">iPhone</a>
+              <a class="will-change" href="#Nokia">Nokia</a>
+            </div>
+          </div>
+
+
+          <div class="subnav">
+            <button class="subnavbtn">FEATURE PHONES</button>
+
+            <div class="subnav-content">
+              <a class="will-change" href="#Samsung">Samsung</a>
+              <a class="will-change" href="#Nokia">Nokia</a>
+            </div>
+
+          </div>
+
+
+          <div class="subnav">
+            <button class="subnavbtn">ELECTRONICS & APPLIANCES</button>
+            <div class="subnav-content">
+              <div class="row">
+                <div class="column">
+                  <h3> Home Appliances</h3>
+                  <a class="will-change" href="#">Televisions</a>
+                  <a class="will-change" href="#">AC</a>
+                  <a class="will-change" href="#">Refrigerator & Fridge </a>
+                  <a class="will-change" href="#">Geyser/Room Heater</a>
+                  <a class="will-change" href="#">Iron</a>
+                  <a class="will-change" href="#">Washing Machine</a>
+                  <a class="will-change" href="#">BOSCH Home Appliances</a>
+                  <a aclass="will-change" href="#">Home Theater & Sound System</a>
+
+                </div>
+
+                <div class="column">
+                  <h3>Kitchen Appliances</h3>
+                  <a class="will-change" href="#">Grinder & Blender</a>
+                  <a class="will-change" href="#">Water Filters & Purifiers</a>
+                  <a class="will-change" href="#">Microwave Oven</a>
+                  <a class="will-change" href="#">Kettle</a>
+                  <a class="will-change" href="#">Rice Cooker</a>
+                  <a class="will-change" href="#">Cooking Stove</a>
+                  <a class="will-change" href="#">Kitchen Hood</a>
+                </div>
+
+                <div class="column">
+                  <h3>Others</h3>
+                  <a class="will-change" href="#">Tools & Hardware</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="subnav">
+            <button class="subnavbtn">ACCESSORIES </button>
+
+            <div class="subnav-content">
+              <div class="row">
+                <div class="column">
+                  <h3>Mobile Accessories</h3>
+                  <a class="will-change" href="#">Apple Accessories</a>
+                  <a class="will-change" href="#">Charger & Adapter</a>
+                  <a class="will-change" href="#">Data Cables</a>
+                  <a class="will-change" href="#">Power Bank</a>
+                  <a class="will-change" href="#">Headphone</a>
+                  <a class="will-change" href="#">Speaker</a>
+                  <a class="will-change" href="#">Action Cameras</a>
+                  <a class="will-change" href="#">Smart Watch</a>
+                  <a class="will-change" href="#">True Wireless Earbud</a>
+                  <a class="will-change" href="#">Selfie Sticks</a>
+                  <a class="will-change" href="#">JBL & HK Accessories</a>
+                  <a class="will-change" href="#">Other Accessories</a>
+                </div>
+
+                <div class="column">
+                  <h3>Computer Accessories</h3>
+                  <a class="will-change" href="#">Laptop & Notebook</a>
+                  <a class="will-change" href="#">Processor</a>
+                  <a class="will-change" href="#">Printer</a>
+                  <a class="will-change" href="#">Mouse</a>
+                  <a class="will-change" href="#">Mouse Pad</a>
+                  <a class="will-change" href="#">Monitor</a>
+                  <a class="will-change" href="#">Keyboard</a>
+                  <a class="will-change" href="#">Pen Drive</a>
+                  <a class="will-change" href="#">Gamepad</a>
+                  <a class="will-change" href="#">USB Port & Hub</a>
+                  <a class="will-change" href="#">Router</a>
+                  <a class="will-change" href="#">Headset</a>
+                  <a class="will-change" href="#">HDD & SSD</a>
+                  <a class="will-change" href="#">RAM</a>
+                  <a class="will-change" href="#">Sound System</a>
+                  <a class="will-change" href="#">Software & Antivirus</a>
+                  <a class="will-change" href="#">Power Supply</a>
+                  <a class="will-change" href="#">UPS</a>
+                  <a class="will-change" href="#">Webcam</a>
+                  <a class="will-change" href="#">Other Accessories</a>
+                </div>
+
+                <div class="column">
+                  <h3>Gaming Consoles & Accessories</h3>
+                  <a class="will-change" href="#">Console</a>
+                  <a class="will-change" href="#">Controller</a>
+                  <a class="will-change" href="#">Games</a>
+                  <a class="will-change" href="#">Accessories</a>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+          <div class="subnav">
+            <button class="subnavbtn">LIFESTYLE </button>
+
+            <div class="subnav-content">
+              <div class="row">
+                <div class="column">
+                  <h3>Grooming Products</h3>
+                  <a class="will-change" href="#Nokia" href="#">Trimmer & Shaver</a>
+                  <a class="will-change" href="#Nokia" href="#">Hair Straighteners</a>
+                  <a class="will-change" href="#Nokia" href="#"> Hair Dryers</a>
+                  <h4>Men's Watches</h4>
+                  <h4>Women's Watches</h4>
+                  <h4>Men's Fragrances</h4>
+                  <h4>Women's Fragrances</h4>
+                  <h4>Digital Products</h4>
+                  <h4>Helmet</h4>
+                  <h4>Backpack</h4>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </header>
+
+    <div class="main-container">
+
+
+
+
+
+
+
+      <div class="mob-nav">
+
+        <div class="content-mob-nav">
+          <p> SHOP BY CATEGORY</p>
+        </div>
+
+        <div class="mob-nav-category">
+          <div class="category-raw">
+            <div class="category-column">
+
+              <div class="category-content">
+                <img src="./img/Smartphones-pickaboo.png" width="70px" height="70px">
+                <p>Smartphones</p>
+              </div>
+
+              <div class="category-content">
+                <img src="./img/computer-accessories-pickaboo.png" width="70px" height="70px">
+                <p> Computer Accessories</p>
+              </div>
+
+              <div class="category-content">
+                <img src="./img/mobile-accessories-pickaboo.png" width="70px" height="70px">
+                <p>Mobile Accessories</p>
+              </div>
+            </div>
+
+            <div class="category-column">
+              <div class="category-content">
+                <img src="./img/featurephones-pickaboo.png" width="70px" height="70px">
+                <p>Feature Phones </p>
+              </div>
+
+              <div class="category-content">
+                <img src="./img/electronics-appliances-pickaboo.png" width="70px" height="70px">
+                <p>Electrics Accessories</p>
+              </div>
+
+              <div class="category-content">
+                <img src="./img/lifestyle-pickaboo.png" width="70px" height="70px">
+                <p>Lifestyle & Personal Care</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="content">
+
+        <div class="banner1-container">
+          <img src="./img/Smartphone.jpg" alt="Avatar" class="image">
+          <div class="overlay"></div>
+        </div>
+
+
+        <div class="content-nav">
+          <strong> MOBILE</strong>
+        </div>
+
+        <div class="content-main">
+
+          <div class="content-box">
+            <img class="product-image" src="./img/poco-c3-3-32-offer-on-smartphones.jpg">
+
+            <div class="product-name"><a href="#">POCO C3 3GB/32GB</a></div>
+            <h3 style="color: red;">৳11,999</h3>
+          </div>
+
+
+
+          <div class="content-box">
+            <img class="product-image" src="./img/oppo-f17-offer-on-smartphones.jpg">
+            <div class="product-name"> <a href="#">OPPO F17 8GB/128GB</a></div>
+            <h3 style="color: red;">৳22,990</h3>
+          </div>
+
+
+
+
+          <div class="content-box">
+            <img class="product-image" src="./img/vivo-y20-4gb-64gb-offer-on-smartphone-december-2020.jpg">
+            <div class="product-name"><a href="#">vivo Y20 4GB/64GB With Free Remax RM-510 Hi Basse Wired Earphone</a>
+            </div>
+            <h3 style="color: red;">৳14,990</h3>
+          </div>
+
+
+
+
+          <div class="content-box">
+            <div class="discount">-10%</div>
+            <img class="product-image" src="./img/samsung-galaxy-m21-6gb-128gb.jpg">
+            <div class="product-name"> <a href="#">Samsung Galaxy M21 6GB/128GB</a> </div>
+            <h3 style="color: red;">৳18,899<span style="font-size: 16px; font-weight: 300;"> <s>৳20,999</s></span></h3>
+          </div>
+
+
+
+          <div class="content-box">
+            <div class="discount">-6%</div>
+            <img class="product-image" src="./img/samsung-galaxy-a71-1-1-1.jpg">
+            <div class="product-name"> <a href="#">Samsung Galaxy A71</a> </div>
+            <h3 style="color: red;">৳32,999 <span style="font-size: 16px; font-weight: 300;"><s>৳34,999</s></span></h3>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="content">
+
+        <div class="banner1-container">
+          <img src="./img/mobile-accessories.jpg" alt="Avatar" class="image">
+          <div class="overlay"></div>
+        </div>
+
+
+        <div class="content-nav">
+          <strong>MOBILE ACCESSORIES</strong>
+        </div>
+
+        <div class="content-main">
+          <div class="content-box trendy-product">
+            <div class="discount">-7%</div>
+            <div class=" product-image  product-image1 "><img src="./img/kw66-1.jpg"></div>
+            <div class="product-name"> <a href="#">Xiaomi IMILAB KW66 Smart Watch</a></div>
+            <h3 style="color: red;">৳3,249<span style="font-size: 16px; font-weight: 300;"> <s>৳3,490</s></span></h3>
+          </div>
+
+
+
+          <div class="content-box trendy-product">
+            <div class="discount">-22%</div>
+            <img class="fastpick" src="./img/fastpick.png" width="60px" height="12px">
+            <div class=" product-image  product-image1 "><img src="./img/mi-1_1_1.jpg"></div>
+            <div class="product-name"> <a href="#">Xiaomi True Wireless Earbuds Basic 2</a></div>
+            <h3 style="color: red;">৳1,490<span style="font-size: 16px; font-weight: 300;"> <s>৳1,899</s></span></h3>
+          </div>
+
+
+
+          <div class=" content-box trendy-product ">
+            <div class="discount">-10%</div>
+            <img class="fastpick" src="./img/fastpick.png" width="60px" height="12px">
+            <div class="  product-image  product-image1"><img src="./img/C11.jpg"></div>
+            <div class="product-name"> <a href="#">JBL T110 In-Ear Headphones</a>
+            </div>
+            <h3 style="color: red;">৳990<span style="font-size: 16px; font-weight: 300;"> <s>৳1,100</s></span></h3>
+          </div>
+
+
+
+          <div class="content-box trendy-product">
+            <div class="discount">-23%</div>
+            <img class="fastpick" src="./img/fastpick.png" width="60px" height="12px">
+            <div class=" product-image product-image1"><img src="./img/xiaomi-tv-stick.jpg"></div>
+            <div class="product-name"> <a href="#">Xiaomi TV Stick Global Version</a> </div>
+            <h3 style="color: red;">৳3,090<span style="font-size: 16px; font-weight: 300;"> <s>৳3,990</s></span></h3>
+          </div>
+
+
+          <div class="content-box  trendy-product">
+            <div class="discount">-13%</div>
+            <img class="fastpick" src="./img/fastpick.png" width="60px" height="12px">
+            <div class="  product-image product-image1"><img src="./img/xiaomi-v3-18w-blk.jpg"></div>
+            <div class="product-name"> <a href="#">Xiaomi V3 10000mAh 18W Dual Input/Output Fast Charge Power Bank</a>
+            </div>
+            <h3 style="color: red;">৳1,299 <span style="font-size: 16px; font-weight: 300;"><s>৳1,490</s></span></h3>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="content">
+
+        <div class="banner1-container">
+          <img src="./img/computer-accessories.jpg " class="image">
+          <div class="overlay"></div>
+        </div>
+
+        <div class="content-nav">
+          <strong>COMPUTER ACCESSORIES</strong>
+        </div>
+
+        <div class="content-main">
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-18%</div>
+            <img class="fastpick" src="./img/fastpick.png" width="60px" height="12px">
+            <img class="product-image" src="./img/yyy.jpg">
+            <div class="product-name"> <a href="#"> TP-Link Archer C20 AC750 Wireless Dual Band Router</a></div>
+            <h3 style="color: red;">৳2,050 <span style="font-size: 16px; font-weight: 300;"><s>৳2,490</s></span></h3>
+          </div>
+
+
+
+          <div class="content-box content-box1">
+            <div class="discount">-7%</div>
+            <img class="product-image" src="./img/wifi_version_1__1.jpg">
+            <div class="product-name"> <a href="#">Hp Laserjet Pro M135wifi multination Printer</a></div>
+            <h3 style="color: red;">৳13,500 <span style="font-size: 16px; font-weight: 300;"><s>৳14,500</s></span></h3>
+          </div>
+
+
+
+          <div class="content-box  content-box1">
+            <img class="fastpick" src="./img/fastpick.png" width="60px" height="12px">
+            <div class="discount">-24%</div>
+            <img class="product-image" src="./img/wd-1.jpg">
+            <div class="product-name"> <a href="#">Western Digital 120GB Sata SSD</a></div>
+            <h3 style="color: red;">9৳1,750 <span style="font-size: 16px; font-weight: 300;"><s>৳2,30099</s></span></h3>
+          </div>
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-9%</div>
+            <img class="product-image" src="./img/cpu-1.jpg">
+            <div class="product-name"> <a href="#">Intel 10th Gen i3 CPU</a></div>
+            <h3 style="color: red;">৳24,500<span style="font-size: 16px; font-weight: 300;"><s>৳27,000</s></span></h3>
+          </div>
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-2%</div>
+            <img class="product-image" src="./img/s145-1_1.jpg">
+            <div class="product-name"> <a href="#">Lenovo IdeaPad S145 AMD A4-9125 AMD Radeon R3 Graphics, 15.6" HD
+                Platinum Grey Notebook with Free DOS (81N300J9IN)</a></div>
+            <h3 style="color: red;">৳29,000 <span style="font-size: 16px; font-weight: 300;"><s>৳29,500</s></span></h3>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="content">
+
+        <div class="banner1-container">
+          <img src="./img/Lifestyle.jpg "  class="image">
+          <div class="overlay"></div>
+        </div>
+
+
+        <div class="content-nav">
+          <strong>LIFESTYLE</strong>
+        </div>
+
+        <div class="content-main">
+
+
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-33%</div>
+            <img class="product-image" src="./img/13-1_3.jpg">
+            <div class="product-name"> <a href="#">CASIO MTP-1314L-8AV Men's Black Dial Leather Band Watch</a></div>
+            <h3 style="color: red;">৳3,500<span style="font-size: 16px; font-weight: 300;"> <s>৳5,250</s></span></h3>
+          </div>
+
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-7%</div>
+            <img class="product-image" src="./img/hugo-boss-just-diffrent.jpg">
+            <div class="product-name"> <a href="#">HUGO BOSS JUST DIFFERENT MEN EDT 125 ML (737052714028)</a> </div>
+            <h3 style="color: red;">৳3,850<span style="font-size: 16px; font-weight: 300;"> <s>৳4,150</s></span></h3>
+          </div>
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-48%</div>
+            <img class="fastpick" src="./img/fastpick.png" width="60px" height="12px">
+            <img class="product-image" src="./img/km-9020-silver.jpg">
+            <div class="product-name"> <a href="#">Kemei KM-9020 Trimmer</a></div>
+            <h3 style="color: red;">৳599 <span style="font-size: 16px; font-weight: 300;"><s>৳1,150</s></span></h3>
+          </div>
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-30%</div>
+            <img class="product-image" src="./img/netflix_gift_card_artboard_1_2.jpg">
+            <div class="product-name"> <a href="#">Netflix 1 Screen Sharing 1 Month</a></div>
+            <h3 style="color: red;">৳225<span style="font-size: 16px; font-weight: 300;"> <s>৳320</s></span></h3>
+          </div>
+
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-17%</div>
+            <img class="fastpick" src="./img/fastpick.png" width="60px" height="12px">
+            <img class="product-image" src="./img/philips-bt1215-cordless-trimmer.jpg">
+            <div class="product-name"> <a href="#">Philips BT1215 Cordless Trimmer</a></div>
+            <h3 style="color: red;">৳2,890<span style="font-size: 16px; font-weight: 300;"> <s>৳3,500</s></span></h3>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content">
+
+
+        <div class="banner1-container">
+          <img src="./img/Electronics-Banner-updated.jpg "  class="image">
+          <div class="overlay"></div>
+        </div>
+
+
+
+        <div class="content-nav">
+          <strong> ELECTRONICS & APPLIANCES </strong>
+        </div>
+
+        <div class="content-main">
+
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-13%</div>
+            <img class="product-image" src="./img/hot-1.jpg">
+            <div class="product-name"> <a href="#">Instant Hot Water Shower</a></div>
+            <h3 style="color: red;">৳950 <span style="font-size: 16px; font-weight: 300;"><s>৳1,090</s></span></h3>
+          </div>
+
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-27%</div>
+            <img class="product-image" src="./img/midea-dsk70035-j-instant-water-heater.jpg">
+            <div class="product-name"> <a href="#">Midea DSK70035-J Instant Water Heater</a></div>
+            <h3 style="color: red;">৳5,770<span style="font-size: 16px; font-weight: 300;"> <s>৳7,900</s></span></h3>
+          </div>
+
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-17%</div>
+            <img class="product-image" src="./img/heater.jpg">
+            <div class="product-name"> <a href="#">Miyako PTC602 Electric Room Heater</a></div>
+            <h3 style="color: red;">৳2,490 <span style="font-size: 16px; font-weight: 300;"><s>৳2,990</s></span></h3>
+          </div>
+
+
+          <div class="content-box content-box1">
+            <div class="discount">-17%</div>
+            <img class="product-image" src="./img/4-1_1_2.jpg">
+            <div class="product-name"> <a href="#">Samsung N5300 40 Inch Series 5 Full HD Flat Smart TV</a></div>
+            <h3 style="color: red;">৳37,222<span style="font-size: 16px; font-weight: 300;"> <s>৳45,000</s></span></h3>
+          </div>
+
+
+          <div class="content-box content-box1">
+            <div class="discount">-13%</div>
+            <img class="product-image" src="./img/shaerp.jpg">
+            <div class="product-name"> <a href="#">SHARP R-20CT(S) 20 Liters Microwave Oven</a></div>
+            <h3 style="color: red;">৳9,450 <span style="font-size: 16px; font-weight: 300;"><s>৳10,900</s></span></h3>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+      <div class="content">
+
+        <div class="banner1-container">
+          <img src="./img/Gaming-Accessories.jpg "   class="image">
+          <div class="overlay"></div>
+        </div>
+
+        <div class="content-nav">
+          <strong>GAMING CONSOLES & ACCESSORIES</strong>
+        </div>
+
+        <div class="content-main">
+
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-24%</div>
+            <img class="product-image" src="./img/dc-5.jpg">
+            <div class="product-name"> <a href="#">Dobe Dual Charging Dock for PS4</a></div>
+            <h3 style="color: red;">৳680 <span style="font-size: 16px; font-weight: 300;"><s>৳900</s></span></h3>
+          </div>
+
+          <div class="content-box  content-box1">
+            <div class="discount">-12%</div>
+            <img class="product-image" src="./img/81ucwruvjol._sl1500_.jpg">
+            <div class="product-name"> <a href="#">FIFA 21 (PS4)</a></div>
+            <h3 style="color: red;">৳4,400<span style="font-size: 16px; font-weight: 300;"> <s>৳5,000</s></span></h3>
+          </div>
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-11%</div>
+            <img class="product-image" src="./img/ps5-dual-sense-5-wireless-controller.jpg">
+            <div class="product-name"> <a href="#">PS5 Dual Sense 5 Wireless Controller</a></div>
+            <h3 style="color: red;">৳8,500 <span style="font-size: 16px; font-weight: 300;"><s>৳9,500</s></span></h3>
+          </div>
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-13%</div>
+            <img class="product-image" src="./img/ps4-2_1.jpg">
+            <div class="product-name"> <a href="#">SONY PS4 (PlayStation 4) Slim 500GB Gaming Console - Jet Black</a>
+            </div>
+            <h3 style="color: red;">৳26,499<span style="font-size: 16px; font-weight: 300;"> <s>৳30,500</s></span></h3>
+          </div>
+
+
+          <div class="content-box  content-box1">
+            <div class="discount">-40%</div>
+            <img class="fastpick" src="./img/fastpick.png" width="60px" height="12px">
+            <img src="./img/sup-m3-game-box-built-in-900--red-1.jpg">
+            <div class="product-name"> <a href="#">Sup M3 Game Box Built in 900 Retro Classic Games in Mini Handheld
+                Console</a></div>
+            <h3 style="color: red;">৳1,449 <span style="font-size: 16px; font-weight: 300;"><s>৳2,400</s></span></h3>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h3>ABOUT</h3>
+            <a href="s">About Us</a> <br>
+            <a href="s">Privacy Policy</a><br>
+            <a href="s">Cookie Policy</a><br>
+            <a href="s">Warranty Policy</a><br>
+            <a href="s">Shipping Policy</a><br>
+            <a href="s">Why Shop with Us</a><br>
+            <a href="s">FAQ</a><br>
+            <a href="s">Returns and Replacement</a><br>
+            <a href="s">Terms & Conditions</a><br>
+          </div>
+          <div class="footer-col">
+            <h3>LET US HELP YOU</h3>
+            <a href="s">Your Account</a><br>
+            <a href="s">Your Orders</a><br>
+            <a href="s">Fastpick</a><br>
+            <a href="s">How to Place an Order</a><br>
+            <a href="s">EMI</a><br>
+            <a href="s">About TEMP Service</a><br>
+            <a href="s">Terms & Conditions for TEMP Service</a><br>
+            <a href="s">Samsung Galaxy S20 FE Exchange list</a><br>
+          </div>
+          <div class="footer-col">
+            <h3>CONTACT</h3>
+            <a href="s">Contact Us</a><br>
+          </div>
+          <div class="footer-col address">
+            <h3>PICKABOO</h3>
+            <p style="color: grey; line-height: 1.6;"> House 10, Road 12 <br>
+              Block F, Niketan, Gulshan 1,<br>
+              Dhaka - 1212, Bangladesh<br>
+               +8809666745745</p>
+
+            <img src="./img/google-play-badge-pickaboo.png" alt="google play" height="65px" width="200px">
+
+            <img src="./img/App-store-badge-pickaboo.png" alt="apple store" height="65px" width="200px">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+
+
+        <div class="social-media">
+          <div style="background-color:rgb(85, 113, 194);"><i class="fa fa-facebook"></i></div>
+          <div style="background-color:rgb(207, 52, 52);"><i class="fa fa-youtube"></i></div>
+          <div style="background-color: #333;"><i class="fa fa-instagram"></i></div>
+        </div>
+
+        <div class="payment-icon">
+          <img src="./img/bKash-Logo.png">
+          <img src="./img/American_Express-48x48.png">
+          <img src="./img/mastercard.gif">
+          <img src="./img/visacard.png">
+
+        </div>
+
+
+
+        <span>© 2020 pickaboo.com | All Rights Reserved.</span>
+
+      </div>
+
+  </div>
+
+  </footer>
+
+
+
+
+  </div>
+
+
+  <script>
+
+
+
+    function openNav() {
+
+      document.getElementById("mySidenav").style.width = "80%";
+
+      document.getElementById("page-container").style.marginLeft = "80%";
+    }
+
+    function closeNav() {
+
+      document.getElementById("mySidenav").style.width = "0";
+
+      document.getElementById("page-container").style.marginLeft = "0";
+    }
+
+
+  </script>
+
+
+  <script>
+
+    //set function openCity
+
+    function openMenu(evt, menuName) {
+
+      var i, tabcontent, tab0;
+
+
+
+      tabcontent =
+        document.getElementsByClassName("tabcontent");
+
+      for (i = 0; i < tabcontent.length; i++) {
+
+        tabcontent[i].style.display = "none";
+      }
+
+
+
+      tab0 = document.getElementsByClassName("tab0");
+
+      for (i = 0; i < tab0.length; i++) {
+
+        tab0[i].className = tab0[i].className.replace(" active", "");
+      }
+
+
+
+      document.getElementById(menuName).style.display = "block";
+
+      evt.currentTarget.className += " active";
+    }
+
+
+
+
+    // Get the element with id="defaultOpen" and click on it
+
+    document.getElementById("defaultOpen").click();
+
+  </script>
+   
+
+
+  <script>
+
+    var acc = document.getElementsByClassName("accordion");
+
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+
+      acc[i].addEventListener("click",
+        function () {
+
+          this.classList.toggle("active");
+
+          var panel = this.nextElementSibling;
+
+          if (panel.style.display === "block") {
+
+            panel.style.display = "none";
+
+          }
+
+          else {
+
+            panel.style.display = "block";
+
+          }
+
+        });
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>
